@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import {
   FaCoins,
   FaEnvelope,
+  FaLocationArrow,
   FaMapMarkerAlt,
   FaMobileAlt,
   FaPhone,
@@ -69,7 +70,7 @@ const ContactPage = () => {
     if (errors === false) {
       setBtnLoader(true);
       axios
-        .post("https://homyz-server.vercel.app/contact", formData)
+        .post("https://formsubmit.co/mwendermwalali@gmail.com", formData)
         .then((response) => {
           showToast();
           setFormData({
@@ -154,7 +155,7 @@ const ContactPage = () => {
             whileInView="animate"
             variants={animationVariants.zoomOut}
             viewport={{ once: true, amount: 0.2 }}
-            className="text-6xl max-lg:mx-auto font-semibold max-sm:text-5xl max-w-lg "
+            className="text-6xl max-lg:mx-auto font-semibold text-white max-sm:text-5xl max-w-lg "
           >
             Contact Us
           </motion.h1>
@@ -175,7 +176,7 @@ const ContactPage = () => {
                 </div>
                 <h2 className="title-font font-semibold ">Services</h2>
               </div>
-              <p>Neque porro quisquam est, qui dolorem ipsum.</p>
+              <p>Whether you want to buy or rent, we 'gat you.</p>
             </motion.div>
             <motion.div
               variants={animationVariants.fadeUp}
@@ -187,7 +188,7 @@ const ContactPage = () => {
                 </div>
                 <h2 className="title-font font-semibold ">Pricing</h2>
               </div>
-              <p>Neque porro quisquam est, qui dolorem ipsum.</p>
+              <p>Cheap and transparent pricing models.</p>
             </motion.div>
             <motion.div
               variants={animationVariants.fadeUp}
@@ -199,7 +200,7 @@ const ContactPage = () => {
                 </div>
                 <h2 className="title-font font-semibold ">Support</h2>
               </div>
-              <p>Neque porro quisquam est, qui dolorem ipsum.</p>
+              <p>Round-the-clock support.</p>
             </motion.div>
           </motion.div>
         </div>
@@ -333,33 +334,37 @@ const ContactPage = () => {
             <h1 className="font-semibold ">
               Contact our support{" "}
               <span className="font-semibold title-font  text-red-500">
-                team to grow your business
+                team to acquire a house
               </span>
             </h1>
           </div>
           <p className="text-xl">
-            Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-            impedit quo minus id quod maxime placeat facere possimus, omnis
-            voluptas assumenda est, omnis dolor repellendus.
+          Where every corner tells a story of meticulous design and thoughtful construction. Whether you're seeking your forever home or exploring investment opportunities, our team of experts is here to guide you every step of the way. 
           </p>
           <div className="flex flex-col gap-3">
             <div className="flex  gap-3 text-xl items-center">
               <div>
                 <FaEnvelope className="text-red-500" />
               </div>
-              <p>Office # 420 DHA Phase 90, Karachi, PK</p>
+              <p>patmagu@gmail.com</p>
             </div>
             <div className="flex  gap-3 text-xl items-center">
               <div>
                 <FaPhone className="rotate-90 text-red-500" />
               </div>
-              <p>+92 39283848238</p>
+              <p>+254720 716 629</p>
             </div>
             <div className="flex  gap-3 text-xl items-center">
               <div>
                 <FaMapMarkerAlt className="text-red-500" />
               </div>
-              <p>information@office.com</p>
+              <p>P.O. Box 73928-00200 Nrb.</p>
+            </div>
+            <div className="flex  gap-3 text-xl items-center">
+              <div>
+                <FaLocationArrow className="text-red-500" />
+              </div>
+              <p>Next to Saika State, Along Kangundo Road</p>
             </div>
           </div>
         </motion.div>
@@ -386,7 +391,7 @@ const ContactPage = () => {
                 className="max-w-xl max-lg:max-w-lg max-sm:w-full text-center"
               >
                 <h1 className="text-[46px] max-lg:text-4xl max-sm:text-[34px] max-[500px]:text-3xl leading-tight font-semibold">
-                  Whatever you are, you
+                  Call and ask, you
                   <br /> will definitely get a place
                 </h1>
                 <p className="text-xl mt-3">
@@ -397,27 +402,7 @@ const ContactPage = () => {
             </div>
 
             {/* map human images start */}
-            <div className="absolute top-24 max-md:top-6 left-16 max-lg:left-10  max-md:left-16 w-12 h-12 rounded-full overflow-hidden">
-              <img
-                src="/contact-page-images/1.jpg"
-                className="w-full h-full object-cover object-center"
-                alt="1"
-              />
-            </div>
-            <div className="absolute bottom-20 max-lg:bottom-12 left-36 max-lg:left-20 max-sm:left-10 w-12 h-12 rounded-full overflow-hidden">
-              <img
-                src="/contact-page-images/2.jpg"
-                className="w-full h-full object-cover object-center"
-                alt="2"
-              />
-            </div>
-            <div className="absolute top-12 right-36 max-lg:right-24 max-sm:right-12 w-12 h-12 rounded-full overflow-hidden">
-              <img
-                src="/contact-page-images/3.jpg"
-                className="w-full h-full object-cover object-center"
-                alt="3"
-              />
-            </div>
+            
             {/* map human images end */}
 
             {/* map points start */}
@@ -435,93 +420,8 @@ const ContactPage = () => {
         </div>
       </div>
 
-      {/* what we do section start */}
-      <div className="bg-gray-100">
-        <div
-          style={{ maxWidth: 1200 }}
-          className=" mx-auto flex gap-5 justify-between items-start p-10 py-28 max-md:py-16 max-md:px-5 max-lg:flex-col max-lg:items-center  max-lg:gap-12"
-        >
-          <motion.div
-            initial="initial"
-            whileInView="animate"
-            variants={animationVariants.zoomOut}
-            viewport={{ once: true, amount: 0.2 }}
-            className="w-1/3 max-lg:w-full max-lg:text-center flex flex-col gap-2 items-start max-lg:items-center"
-          >
-            <h2 className="text-5xl max-md:text-4xl font-bold title-font">
-              What we do
-            </h2>
-            <p className="text-xl">
-              Lorem ipsum dolor sit amet consectetur. Malesuada vehicula netus
-              urna in elit amet blandit enim lacinia. Tellus leo felis et vel
-              eget maecenas.
-            </p>
-            <Link to="/about" onClick={scrollToTop}>
-              <button
-                style={{ borderWidth: 1.5, borderRadius: 4 }}
-                className="bg-transparent  text-black border-red-500 text-xl px-5 py-2 duration-300 hover:bg-red-500 hover:text-white transition-all mt-5 max-md:mt-3"
-              >
-                About Us
-              </button>
-            </Link>
-          </motion.div>
-
-          {/* <div className="cards w-2/3 max-lg:w-full flex justify-center max-md:flex-col max-md:items-center gap-7"> */}
-
-          <motion.div
-            initial="initial"
-            whileInView="animate"
-            variants={animationVariants.fadeUp}
-            viewport={{ once: true, amount: 0.2 }}
-            className="cards w-2/3 max-lg:w-full flex justify-center max-md:flex-col max-md:items-center gap-7"
-          >
-            {/* <Reveal
-              triggerOnce={true}
-              className="flex flex-col gap-7 "
-              keyframes={fadeUp}
-            > */}
-
-            {/* <div className="flex flex-col gap-7 "> */}
-            <div className="flex flex-col gap-7 ">
-              <WhatWeDoCard
-                iconSrc={"/icons/reliability.png"}
-                iconAlt={"reliability"}
-                title={"Reliability"}
-                desc={
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam distinctio, nemo libero deleniti quibusdam quia!"
-                }
-              />
-              <WhatWeDoCard
-                iconSrc={"/icons/communication.png"}
-                iconAlt={"communication"}
-                title={"communication"}
-                desc={
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam distinctio, nemo libero deleniti quibusdam quia!"
-                }
-              />
-            </div>
-            <div className="flex flex-col gap-7">
-              <div
-                style={{ height: 130 }}
-                className="max-md:hidden rounded-lg w-80 bg-gradient-to-t from-white to-transparent"
-              ></div>
-              <WhatWeDoCard
-                iconSrc={"/icons/quality-first.png"}
-                iconAlt={"quality-first"}
-                title={"Quality First"}
-                desc={
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam distinctio, nemo libero deleniti quibusdam quia!"
-                }
-              />
-              <div
-                style={{ height: 130 }}
-                className="max-md:hidden rounded-lg w-80 h-36 bg-gradient-to-b from-white to-transparent"
-              ></div>
-            </div>
-          </motion.div>
-          {/* </Reveal> */}
-        </div>
-      </div>
+      {/* faq section start */}
+  
       <div
         style={{ maxWidth: 1200 }}
         className=" mx-auto  p-10 py-28 max-md:py-14 max-md:px-5 "

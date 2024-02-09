@@ -29,22 +29,13 @@ export default function Carousel() {
         className="mySwiper text-xl"
       >
         <SwiperSlide>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit neque
-          natus asperiores unde, nulla sequi, nobis saepe dicta aut maiores quia
-          quos sapiente dolores consequuntur perspiciatis repellendus quis
-          necessitatibus quas.
+        At Patnan Investments we understand that finding the perfect home is more than just a transaction; it's about finding a sanctuary. Our website offers an unparalleled user experience, with intuitive search tools, detailed property listings, and personalized recommendations tailored to each client's unique preferences and needs..
         </SwiperSlide>
         <SwiperSlide>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit neque
-          natus asperiores unde, nulla sequi, nobis saepe dicta aut maiores quia
-          quos sapiente dolores consequuntur perspiciatis repellendus quis
-          necessitatibus quas.
+        What sets us apart at Patnan Investments is our unwavering commitment to excellence. From our meticulously curated listings to our dedicated team of real estate professionals, we strive to exceed expectations at every turn. With a focus on transparency, integrity, and unparalleled customer service, we're here to make your real estate journey seamless and satisfying.
         </SwiperSlide>
         <SwiperSlide>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit neque
-          natus asperiores unde, nulla sequi, nobis saepe dicta aut maiores quia
-          quos sapiente dolores consequuntur perspiciatis repellendus quis
-          necessitatibus quas.
+        At Patnan Investments, we believe that home is where the heart is, and we're passionate about helping people find their perfect match. Our website combines cutting-edge technology with a human touch, offering expert guidance, valuable insights, and a seamless browsing experience that makes finding your dream home a joyous adventure.
         </SwiperSlide>
 
         <div className="slider-controler flex max-md:justify-center  gap-3  mt-16">

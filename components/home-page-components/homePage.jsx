@@ -41,7 +41,120 @@ const HomePage = () => {
   };
   return (
     <div className=" w-full overflow-hidden">
-      <div className="  flex bg-[url('/hero-bg-image.jpg')] pt-36 pb-20 bg-top bg-no-repeat bg-cover  ">
+      <div>
+        <div
+          style={{ maxWidth: 1200 }}
+          className="mx-auto flex justify-between items-start p-10 py-28 pb-8 max-md:py-16 gap-5 max-md:px-5 max-md:flex-col max-md:items-center max-md:text-center"
+        >
+          <div className="w-2/4 max-md:w-full ">
+            <motion.div
+              initial="initial"
+              whileInView="animate"
+              variants={animationVariants.zoomOut}
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <h2 className="text-5xl max-md:text-4xl font-bold title-font">
+                We build quality real estate projects
+                <span className=" text-red-500 title-font "> since 1998</span>
+              </h2>
+            </motion.div>
+          </div>
+          <div className="w-2/4 max-md:w-full">
+            <motion.div
+              initial="initial"
+              whileInView="animate"
+              variants={animationVariants.fadeRight}
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <p className="text-xl">
+              Let's turn your aspirations into reality together. Click below to embark on your journey with us.
+              </p>
+              <Link onClick={scrollToTop} to={"/buy"}>
+                <Button
+                  content={"Discover Our Projects"}
+                  fontSize={"text-xl"}
+                  padding={"px-5  py-2"}
+                  furtherClasses={"mt-8"}
+                />
+              </Link>
+            </motion.div>
+          </div>
+        </div>
+      </div>
+      <div style={{ maxWidth: 1200 }} className="p-10 max-md:px-5 mx-auto">
+          {/* <motion.h2
+            initial="initial"
+            whileInView="animate"
+            variants={animationVariants.fadeIn}
+            viewport={{ once: true, amount: 0.2 }}
+            className="text-5xl max-md:text-4xl font-semibold text-center"
+          >
+            Exclusive Properties
+          </motion.h2> */}
+          <div className="flex flex-col gap-5 mt-10 max-sm:mt-8">
+            <div className=" flex gap-5 max-lg:flex-col">
+              <div className="w-2/4 max-lg:w-full">
+                <ExculusivePropertyCard
+                  imgSrc={rentHouses[0].mainImage}
+                  titlePart1={"House in "}
+                  titlePart2={rentHouses[0].name}
+                  pricing={rentHouses[0].price}
+                  type={rentHouses[0].type}
+                  href={rentHouses[0].id}
+                />
+              </div>
+              <div className="w-2/4 gap-5 flex max-lg:w-full max-sm:flex-col">
+                <ExculusivePropertyCard
+                  imgSrc={rentHouses[1].mainImage}
+                  titlePart1={"House in "}
+                  titlePart2={rentHouses[1].name}
+                  pricing={rentHouses[1].price}
+                  type={rentHouses[1].type}
+                  href={rentHouses[1].id}
+                />
+                <ExculusivePropertyCard
+                  imgSrc={rentHouses[2].mainImage}
+                  titlePart1={"House in "}
+                  titlePart2={rentHouses[2].name}
+                  pricing={rentHouses[2].price}
+                  type={rentHouses[2].type}
+                  href={rentHouses[2].id}
+                />
+              </div>
+            </div>
+            <div className=" flex gap-5 max-lg:flex-col">
+              <div className="w-2/4 gap-5 flex max-lg:w-full max-sm:flex-col">
+                <ExculusivePropertyCard
+                  imgSrc={rentHouses[3].mainImage}
+                  titlePart1={"House in "}
+                  titlePart2={rentHouses[3].name}
+                  pricing={rentHouses[3].price}
+                  type={rentHouses[3].type}
+                  href={rentHouses[3].id}
+                />
+                <ExculusivePropertyCard
+                  imgSrc={rentHouses[4].mainImage}
+                  titlePart1={"House in "}
+                  titlePart2={rentHouses[4].name}
+                  pricing={rentHouses[4].price}
+                  type={rentHouses[4].type}
+                  href={rentHouses[4].id}
+                />
+              </div>
+              <div className="w-2/4 max-lg:w-full">
+                <ExculusivePropertyCard
+                  imgSrc={rentHouses[5].mainImage}
+                  titlePart1={"House in "}
+                  titlePart2={rentHouses[5].name}
+                  pricing={rentHouses[5].price}
+                  type={rentHouses[5].type}
+                  href={rentHouses[5].id}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      {/* <div className="  flex bg-[url('/hero-bg-image.jpg')] pt-36 pb-20 bg-top bg-no-repeat bg-cover  ">
         <motion.div
           initial="initial"
           whileInView="animate"
@@ -121,10 +234,9 @@ const HomePage = () => {
           </motion.div>
         </motion.div>
 
-        {/* </Reveal> */}
-      </div>
-      {/* about section */}
-      <div>
+        {/* </Reveal>
+      </div> */}
+      {/* <div>
         <div
           style={{ maxWidth: 1200 }}
           className="mx-auto flex justify-between items-start p-10 py-28 max-md:py-16 gap-5 max-md:px-5 max-md:flex-col max-md:items-center max-md:text-center"
@@ -166,7 +278,7 @@ const HomePage = () => {
             </motion.div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* what we do section start */}
       <div className="bg-gray-100">
         <div
@@ -181,12 +293,10 @@ const HomePage = () => {
             className="w-1/3 max-lg:w-full max-lg:text-center flex flex-col gap-2 items-start max-lg:items-center"
           >
             <h2 className="text-5xl max-md:text-4xl font-bold title-font">
-              What we do
+              Who we are
             </h2>
             <p className="text-xl">
-              Lorem ipsum dolor sit amet consectetur. Malesuada vehicula netus
-              urna in elit amet blandit enim lacinia. Tellus leo felis et vel
-              eget maecenas.
+            With years of expertise and a passion for perfection, we've etched our mark in the real estate landscape. Each project we undertake is a testament to our commitment to excellence and innovation. 
             </p>
             <Link onClick={scrollToTop} to={"/about"}>
               <button
@@ -209,17 +319,17 @@ const HomePage = () => {
               <WhatWeDoCard
                 iconSrc={"/icons/reliability.png"}
                 iconAlt={"reliability"}
-                title={"Reliability"}
+                title={"Innovative"}
                 desc={
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam distinctio, nemo libero deleniti quibusdam quia!"
+                  "Pioneering new trends and technologies, we reimagine real estate to create innovative and futuristic spaces that exceed expectations."
                 }
               />
               <WhatWeDoCard
                 iconSrc={"/icons/communication.png"}
                 iconAlt={"communication"}
-                title={"communication"}
+                title={"Communication"}
                 desc={
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam distinctio, nemo libero deleniti quibusdam quia!"
+                  "With a track record of delivering on promises, our reliability ensures peace of mind and confidence in every real estate endeavor."
                 }
               />
             </div>
@@ -231,9 +341,9 @@ const HomePage = () => {
               <WhatWeDoCard
                 iconSrc={"/icons/quality-first.png"}
                 iconAlt={"quality-first"}
-                title={"Quality First"}
+                title={"Luxurious"}
                 desc={
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam distinctio, nemo libero deleniti quibusdam quia!"
+                  "From opulent designs to exclusive amenities, our focus on luxury elevates living standards and redefines the essence of refined living."
                 }
               />
               <div
@@ -243,7 +353,7 @@ const HomePage = () => {
             </div>
           </motion.div>
         </div>
-        <div style={{ maxWidth: 1200 }} className="p-10 max-md:px-5 mx-auto">
+        {/* <div style={{ maxWidth: 1200 }} className="p-10 max-md:px-5 mx-auto">
           <motion.h2
             initial="initial"
             whileInView="animate"
@@ -315,7 +425,7 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       {/* what we do section end */}
 
@@ -338,23 +448,16 @@ const HomePage = () => {
             >
               We use Real Estate to show our appreciation of the world.
             </motion.h1>
-            <motion.p
-              variants={animationVariants.fadeLeft}
-              className="text-2xl"
-            >
-              We provide equity and debt capital globally to back projects that
-              make an impact.
-            </motion.p>
             <motion.div
               variants={animationVariants.fadeLeft}
               className="grid grid-cols-2 grid-rows-2 gap-10"
             >
               <div className="flex flex-col max-lg:justify-center max-lg:items-center">
                 <h2 className="title-font text-red-500 text-5xl max-md:text-4xl font-semibold">
-                  8
+                  5
                 </h2>
                 <p className="text-xl">
-                  Years of seccessful experience in real estate
+                Years of Excellence
                 </p>
               </div>
               <div className="flex flex-col max-lg:justify-center max-lg:items-center">
@@ -362,23 +465,23 @@ const HomePage = () => {
                   8
                 </h2>
                 <p className="text-xl">
-                  Years of seccessful experience in real estate
+                Years of Environmental Stewardship
                 </p>
               </div>
               <div className="flex flex-col max-lg:justify-center max-lg:items-center">
                 <h2 className="title-font text-red-500 text-5xl max-md:text-4xl font-semibold">
-                  8
+                  7
                 </h2>
                 <p className="text-xl">
-                  Years of seccessful experience in real estate
+                Years of Client Satisfaction
                 </p>
               </div>
               <div className="flex flex-col max-lg:justify-center max-lg:items-center">
                 <h2 className="title-font text-red-500 text-5xl max-md:text-4xl font-semibold">
-                  8
+                  10
                 </h2>
                 <p className="text-xl">
-                  Years of seccessful experience in real estate
+                Years of Shaping the Real Estate Landscape
                 </p>
               </div>
             </motion.div>

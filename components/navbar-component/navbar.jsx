@@ -3,6 +3,8 @@ import "./navbar.css";
 import Button from "../buttons-component/solidbutton";
 import { Link } from "react-router-dom";
 import { useContext, useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import { animationVariants } from "../../constants/animationVariants";
 import { CartContext } from "../../context/cartContext";
 import {
   NumberInput,
@@ -236,12 +238,20 @@ const NavBar = ({ navBar2, showCase1Page }) => {
           style={{ maxWidth: 1200 }}
           className="flex justify-between mx-auto items-center gap-4 py-7 max-md:py-5 px-10 max-sm:px-5 font-medium"
         >
-          <Link onClick={scrollToTop} to="/">
+          {/* <Link onClick={scrollToTop} to="/">
             <img
               src={navBar2 ? "/Homyz-logo2.png" : logo}
               className="w-44 max-lg:w-36"
               alt="Homyz-logo"
             />
+          </Link> */}
+          <Link onClick={scrollToTop} to="/">
+          <motion.h1
+            variants={animationVariants.fadeLeft}
+            className="text-4xl color-white max-lg:mx-auto font-bold max-sm:text-2xl max-w-lg "
+            ><span className=" text-red-500 title-font ">Patnan </span>
+              Investments
+          </motion.h1>
           </Link>
           <ul
             className={
@@ -262,11 +272,19 @@ const NavBar = ({ navBar2, showCase1Page }) => {
             <Link
               onClick={scrollToTop}
               className="hover:text-red-500 transition-all"
-              to="/Services"
+              to="/buy"
             >
-              Our Services
+              Buy a House
             </Link>
-            <div className="showcase-menu cursor-pointer hover:text-red-500 transition-all relative">
+            <Link
+              onClick={scrollToTop}
+              className="hover:text-red-500 transition-all"
+              to="/rent"
+            >
+              Rent a House
+            </Link>
+            
+            {/* <div className="showcase-menu cursor-pointer hover:text-red-500 transition-all relative">
               Show Cases
               <div className="showcase-list hidden absolute cursor-default -left-4 ">
                 <ul
@@ -301,7 +319,7 @@ const NavBar = ({ navBar2, showCase1Page }) => {
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> */}
             <Link
               onClick={scrollToTop}
               className="hover:text-red-500 transition-all"
@@ -392,7 +410,6 @@ const NavBar = ({ navBar2, showCase1Page }) => {
         } bg-white  left-0 w-96 p-5 px-10 max-sm:px-5 max-sm:w-80 z-30 transition-all font-medium`}
       >
         <div id="header" className="flex justify-between items-center">
-          <img className="w-36" src="/Homyz-logo2.png" alt="Homyz-logo2" />
           <div
             onClick={() => {
               setViewSideNav(!viewSideNav);

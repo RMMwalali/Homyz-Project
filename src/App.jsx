@@ -27,7 +27,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/services",
+    path: "/rent",
     element: (
       <>
         <NavBar />
@@ -57,7 +57,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/showcases/showcase1",
+    path: "/buy",
     element: (
       <>
         <NavBar showCase1Page={true} />

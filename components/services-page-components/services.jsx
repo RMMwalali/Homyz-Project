@@ -16,20 +16,19 @@ const ServicesComponent = () => {
           className="flex gap-10 justify-between items-end max-md:items-center px-10 mx-auto max-md:px-5 max-md:flex-col"
         >
           <div className="text-white flex flex-col gap-8 max-md:items-center max-md:text-center">
-            <h1 className="text-5xl font-bold">Our Services</h1>
+            <h1 className="text-5xl font-bold">Our Rentals</h1>
             <p className="text-xl max-w-md">
-              Our mission is to engage in issues that are of concern to
-              individuals
+              Our mission is to make living in good houses affordable.
             </p>
           </div>
           <div className="flex gap-12 text-white max-md:text-center">
             <div className="flex max-md:items-center  flex-col gap-4">
               <h2 className="text-4xl title-font font-bold">19K+</h2>
-              <p className="text-lg">Premium houses</p>
+              <p className="text-lg">Premium Rentals</p>
             </div>
             <div className="flex max-md:items-center flex-col gap-4">
               <h2 className="text-4xl  title-font font-bold">5000+</h2>
-              <p className="text-lg">Premium houses</p>
+              <p className="text-lg">Signature Estates</p>
             </div>
           </div>
         </motion.div>

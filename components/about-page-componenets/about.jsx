@@ -24,27 +24,26 @@ const AboutPage = () => {
           className="flex gap-10 justify-between items-end max-md:items-center px-10 mx-auto max-md:px-5 max-md:flex-col"
         >
           <div className="text-white flex flex-col gap-8 max-md:items-center max-md:text-center">
-            <h1 className="text-5xl font-bold">Who We Are</h1>
+            <h1 className="text-5xl text-white font-bold">Who We Are</h1>
             <p className="text-xl max-w-md">
-              Our mission is to engage in issues that are of concern to
-              individuals
+            We elevate dreams and craft homes for our clients.
             </p>
           </div>
           <div className="flex gap-12 max-sm:text-center text-white">
             <div className="flex max-md:items-center flex-col gap-4">
-              <h2 className="text-4xl title-font font-bold">19K+</h2>
-              <p className="text-lg">Premium houses</p>
+              <h2 className="text-4xl text-white title-font font-bold">19K+</h2>
+              <p className="text-lg">Premium Rentals</p>
             </div>
             <div className="flex max-md:items-center flex-col gap-4">
-              <h2 className="text-4xl  title-font font-bold">5000+</h2>
-              <p className="text-lg">Premium houses</p>
+              <h2 className="text-4xl  title-font text-white font-bold">5000+</h2>
+              <p className="text-lg">Signature Estates</p>
             </div>
           </div>
         </motion.div>
       </div>
 
       {/* what we offer section start */}
-      <div>
+      {/* <div>
         <motion.div
           initial="initial"
           whileInView="animate"
@@ -105,7 +104,7 @@ const AboutPage = () => {
             </div>
           </div>
         </motion.div>
-      </div>
+      </div> */}
       <div className="bg-black">
         <div
           style={{ maxWidth: 1200 }}
@@ -122,7 +121,7 @@ const AboutPage = () => {
               What we offer
             </h1>
             <p className="text-xl mt-5">
-              We are real estate agency that has been established since 1995
+              We are real estate agency that has been established since 1998
               with many advantages over our competitors. We have more than 10000
               happy customers and have worked with more than 200 distributors
             </p>
@@ -170,9 +169,9 @@ const AboutPage = () => {
             </div>
 
             <div className=" w-1/2 text-5xl max-lg:text-4xl max-md:w-full ">
-              <h1 className="font-semibold ">We focus on all</h1>
+              <h1 className="font-semibold ">We offer</h1>
               <h1 className="font-semibold  text-red-500">
-                Real Estate Class Saaets
+                Classy Affordable Spaces
               </h1>
             </div>
           </motion.div>
@@ -189,8 +188,7 @@ const AboutPage = () => {
                 Residential
               </h2>
               <p className="mt-2">
-                Lorem ipsum dolor sit amet consectetur. Malesuada vehicula netus
-                urna in elit amet.
+              Navigating the world of residential real estate, we assist clients in finding their ideal home sweet home.
               </p>
             </motion.div>
             <motion.div
@@ -200,13 +198,12 @@ const AboutPage = () => {
               viewport={{ once: true, amount: 0.2 }}
               className="border-t-2 text-xl border-black/20 pt-4"
             >
-              <h2 className="title-font font-semibold">-01</h2>
+              <h2 className="title-font font-semibold">-02</h2>
               <h2 className="title-font mt-7  font-medium text-red-500">
-                Residential
+                Commercial
               </h2>
               <p className="mt-2">
-                Lorem ipsum dolor sit amet consectetur. Malesuada vehicula netus
-                urna in elit amet.
+              In the realm of commercial real estate, we specialize in facilitating transactions for businesses seeking prime locations.
               </p>
             </motion.div>
             <motion.div
@@ -216,83 +213,18 @@ const AboutPage = () => {
               viewport={{ once: true, amount: 0.2 }}
               className="border-t-2 text-xl border-black/20 pt-4"
             >
-              <h2 className="title-font font-semibold">-01</h2>
+              <h2 className="title-font font-semibold">-03</h2>
               <h2 className="title-font mt-7  font-medium text-red-500">
-                Residential
+                Investment
               </h2>
               <p className="mt-2">
-                Lorem ipsum dolor sit amet consectetur. Malesuada vehicula netus
-                urna in elit amet.
+              With a focus on investment properties, we empower clients to build wealth through strategic real estate acquisitions and management.
               </p>
             </motion.div>
           </div>
         </div>
       </div>
       {/* we focus section start */}
-      <div
-        className="bg-[50%] max-lg:bg-[55%] max-md:bg-[90%] bg-no-repeat bg-fixed"
-        style={{ backgroundImage: "url('/faq-bannar.jpg')" }}
-      >
-        <div
-          style={{ maxWidth: 1200 }}
-          className="mx-auto  p-10 py-28  max-sm:px-5 max-md:py-16 flex justify-end  "
-        >
-          <motion.div
-            initial="initial"
-            whileInView="animate"
-            variants={animationVariants.fadeUp}
-            viewport={{ once: true, amount: 0.2 }}
-            className="w-1/2 max-lg:w-2/3 max-md:w-full"
-          >
-            <h1 className="text-5xl ">
-              We seek to create value for investors across the
-              <span className="text-red-500"> real estate spectrum</span>
-            </h1>
-            <div className="flex flex-col gap-5 mt-7">
-              <div className="flex justify-between items-center border-b-2 border-black/30 pb-5 text-2xl">
-                <h2>Investmennt Management</h2>
-                <Link
-                  to={"/services"}
-                  onClick={scrollToTop}
-                  className="text-red-500"
-                >
-                  <FaArrowRight className="rotate-45" />
-                </Link>
-              </div>
-              <div className="flex justify-between items-center border-b-2 border-black/30 pb-5 text-2xl">
-                <h2>Investmennt Management</h2>
-                <Link
-                  to={"/services"}
-                  onClick={scrollToTop}
-                  className="text-red-500"
-                >
-                  <FaArrowRight className="rotate-45" />
-                </Link>
-              </div>
-              <div className="flex justify-between items-center border-b-2 border-black/30 pb-5 text-2xl">
-                <h2>Investmennt Management</h2>
-                <Link
-                  to={"/services"}
-                  onClick={scrollToTop}
-                  className="text-red-500"
-                >
-                  <FaArrowRight className="rotate-45" />
-                </Link>
-              </div>
-              <div className="flex justify-between items-center border-b-2 border-black/30 pb-5 text-2xl">
-                <h2>Investmennt Management</h2>
-                <Link
-                  to={"/services"}
-                  onClick={scrollToTop}
-                  className="text-red-500"
-                >
-                  <FaArrowRight className="rotate-45" />
-                </Link>
-              </div>
-            </div>
-          </motion.div>
-        </div>
-      </div>
 
       {/* appreciation section start */}
       <div className="bg-white">
@@ -326,10 +258,10 @@ const AboutPage = () => {
             >
               <div className="flex flex-col max-lg:justify-center max-lg:items-center">
                 <h2 className="title-font text-red-500 text-5xl max-md:text-4xl font-semibold">
-                  8
+                  5
                 </h2>
                 <p className="text-xl">
-                  Years of seccessful experience in real estate
+                Years of Excellence
                 </p>
               </div>
               <div className="flex flex-col max-lg:justify-center max-lg:items-center">
@@ -337,23 +269,23 @@ const AboutPage = () => {
                   8
                 </h2>
                 <p className="text-xl">
-                  Years of seccessful experience in real estate
+                Years of Environmental Stewardship
                 </p>
               </div>
               <div className="flex flex-col max-lg:justify-center max-lg:items-center">
                 <h2 className="title-font text-red-500 text-5xl max-md:text-4xl font-semibold">
-                  8
+                  7
                 </h2>
                 <p className="text-xl">
-                  Years of seccessful experience in real estate
+                Years of Client Satisfaction
                 </p>
               </div>
               <div className="flex flex-col max-lg:justify-center max-lg:items-center">
                 <h2 className="title-font text-red-500 text-5xl max-md:text-4xl font-semibold">
-                  8
+                  10
                 </h2>
                 <p className="text-xl">
-                  Years of seccessful experience in real estate
+                Years of Shaping the Real Estate Landscape
                 </p>
               </div>
             </motion.div>
@@ -441,7 +373,7 @@ const AboutPage = () => {
             className="w-2/4 max-md:w-full max-md:text-center flex flex-col gap-8"
           >
             <h1 className="text-5xl max-md:text-4xl font-semibold">
-              Why do people love homyz
+              Why people love Patnan
             </h1>
             <div>
               <Carousel />
@@ -451,7 +383,7 @@ const AboutPage = () => {
       </div>
       {/* review section end */}
       {/* partner brand section start */}
-      <div className="bg-gray-100 border-t-2 border-black/30  border-dashed">
+      {/* <div className="bg-gray-100 border-t-2 border-black/30  border-dashed">
         <div
           style={{ maxWidth: 1200 }}
           className=" mx-auto flex max-md:flex-col justify-center items-center gap-10 p-10 max-md:px-5  "
@@ -475,7 +407,7 @@ const AboutPage = () => {
             })}
           </motion.div>
         </div>
-      </div>
+      </div> */}
       {/* partner brand section end */}
     </>
   );

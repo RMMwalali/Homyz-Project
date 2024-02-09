@@ -4,7 +4,7 @@ const WhatWeDoCard = ({ iconSrc, iconAlt, title, desc }) => {
       <div className="bg-red-500 w-fit p-4 rounded-lg ">
         <img src={iconSrc} alt={iconAlt} />
       </div>
-      <h2 className="text-3xl font-bold">{title}</h2>
+      <h2 className="text-3xl font-white font-bold">{title}</h2>
       <p className="text-lg">{desc}</p>
     </div>
   );
