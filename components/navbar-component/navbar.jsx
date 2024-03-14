@@ -250,7 +250,7 @@ const NavBar = ({ navBar2, showCase1Page }) => {
             variants={animationVariants.fadeLeft}
             className="text-4xl color-white max-lg:mx-auto font-bold max-sm:text-2xl max-w-lg "
             ><span className=" text-red-500 title-font ">Patnan </span>
-              Investments
+              Investment
           </motion.h1>
           </Link>
           <ul

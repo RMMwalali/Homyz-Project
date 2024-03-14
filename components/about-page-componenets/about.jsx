@@ -26,7 +26,7 @@ const AboutPage = () => {
           <div className="text-white flex flex-col gap-8 max-md:items-center max-md:text-center">
             <h1 className="text-5xl text-white font-bold">Who We Are</h1>
             <p className="text-xl max-w-md">
-            We elevate dreams and craft homes for our clients.
+            Established in 2009, Patnan Investment deals in selling prime plots of land with title deeds at Joska, Malaa and KBC along the upcoming Greater Eastern By Pass, Kangundo road.
             </p>
           </div>
           <div className="flex gap-12 max-sm:text-center text-white">
@@ -121,9 +121,7 @@ const AboutPage = () => {
               What we offer
             </h1>
             <p className="text-xl mt-5">
-              We are real estate agency that has been established since 1998
-              with many advantages over our competitors. We have more than 10000
-              happy customers and have worked with more than 200 distributors
+            Established in 2009, Patnan Investment deals in selling prime plots of land with title deeds at Joska, Malaa and KBC along the upcoming Greater Eastern By Pass, Kangundo road. Our properties are refreshingly different founded on a commitment towards your financial growth.
             </p>
           </motion.div>
 
@@ -185,10 +183,10 @@ const AboutPage = () => {
             >
               <h2 className="title-font font-semibold">-01</h2>
               <h2 className="title-font mt-7  font-medium text-red-500">
-                Residential
+                Land
               </h2>
               <p className="mt-2">
-              Navigating the world of residential real estate, we assist clients in finding their ideal home sweet home.
+              We sell prime plots of land with title deeds at Joska, Malaa and KBC along the upcoming Greater Eastern By Pass, Kangundo road.
               </p>
             </motion.div>
             <motion.div
@@ -215,7 +213,7 @@ const AboutPage = () => {
             >
               <h2 className="title-font font-semibold">-03</h2>
               <h2 className="title-font mt-7  font-medium text-red-500">
-                Investment
+                Apartments
               </h2>
               <p className="mt-2">
               With a focus on investment properties, we empower clients to build wealth through strategic real estate acquisitions and management.

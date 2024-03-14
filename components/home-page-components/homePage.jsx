@@ -36,7 +36,7 @@ const HomePage = () => {
     if (searchInp.value && searchInp.value.trim()) {
       navigate(`/search?query=${searchInp.value}`);
     } else {
-      errorToast("Fill the first first!", "error");
+      errorToast("Write something on the search bar first!", "error");
     }
   };
   return (
@@ -54,8 +54,8 @@ const HomePage = () => {
               viewport={{ once: true, amount: 0.2 }}
             >
               <h2 className="text-5xl max-md:text-4xl font-bold title-font">
-                We build quality real estate projects
-                <span className=" text-red-500 title-font "> since 1998</span>
+                Welcome to Patnan Investment
+                <span className=" text-red-500 title-font "> since 2009</span>
               </h2>
             </motion.div>
           </div>
@@ -253,7 +253,8 @@ const HomePage = () => {
               Who we are
             </h2>
             <p className="text-xl">
-            With years of expertise and a passion for perfection, we've etched our mark in the real estate landscape. Each project we undertake is a testament to our commitment to excellence and innovation. 
+            Here, you are assured of modern apartments, carefully and elegantly designed to present you with a lovely home characterized with modern interior design.
+Real Estate is the best investment you can possibly bank on and we are focused on delivering top notch quality services to you. 
             </p>
             <Link onClick={scrollToTop} to={"/about"}>
               <button
@@ -276,17 +277,17 @@ const HomePage = () => {
               <WhatWeDoCard
                 iconSrc={"/icons/reliability.png"}
                 iconAlt={"reliability"}
-                title={"Innovative"}
+                title={"Professionalism"}
                 desc={
-                  "Pioneering new trends and technologies, we reimagine real estate to create innovative and futuristic spaces that exceed expectations."
+                  "Our professionalism shines through in every interaction, from the insightful guidance to our prompt responses."
                 }
               />
               <WhatWeDoCard
                 iconSrc={"/icons/communication.png"}
                 iconAlt={"communication"}
-                title={"Communication"}
+                title={"Integrity"}
                 desc={
-                  "With a track record of delivering on promises, our reliability ensures peace of mind and confidence in every real estate endeavor."
+                  "Our honesty and commitment to ethical practices make us your trusted partner in our real estate endeavors."
                 }
               />
             </div>
@@ -298,9 +299,9 @@ const HomePage = () => {
               <WhatWeDoCard
                 iconSrc={"/icons/quality-first.png"}
                 iconAlt={"quality-first"}
-                title={"Luxurious"}
+                title={"Transparency"}
                 desc={
-                  "From opulent designs to exclusive amenities, our focus on luxury elevates living standards and redefines the essence of refined living."
+                  "Clear communication and openness will provide you with confidence and peace of mind in your decision-making process."
                 }
               />
               <div
