@@ -8,7 +8,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        "red-500": "#029c09",
+        "red-500": "#3CB371",
       },
     },
   },

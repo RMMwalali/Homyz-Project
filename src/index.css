@@ -6,7 +6,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: "DM Sans", sans-serif;
+  font-family: "EB Garamond", serif;
   -moz-user-select: none; /* firefox */
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE */
@@ -32,11 +32,12 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   border-radius: 20px;
   box-shadow: inset 0 0 6px rgb(48, 48, 48);
-  background-color: #d5515e;
+  background-color: #E3AD49;
 }
 
 .title-font {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
 }
 
 @media only screen and (max-width: 639px) {

@@ -9,8 +9,8 @@ export const rentHouses = [
       "/Rent-houses/House-1/home1-4.jpg",
       "/Rent-houses/House-1/home1-5.jpg",
     ],
-    name: "Lahore",
-    address: "DHA 9 City, Lahore, Pakistan",
+    name: "Kahawa Sukari",
+    address: "Thika Road, Kahawa Sukari",
     price: 130000,
     details: [
       "4 Bedrooms",
@@ -23,7 +23,7 @@ export const rentHouses = [
       "Area: 10 marla",
     ],
     description:
-      "DHA 9 Housing Scheme A block 10 Marla New brand house available for sale Good location house near by hospital and market and masjid and LGS school and other facilities",
+      "DHA 9 Housing Scheme A block 10 Marla New brand house available for sale Good location house near by hospital and market and LGS school and other facilities",
   },
   {
     id: 2,
@@ -35,8 +35,8 @@ export const rentHouses = [
       "/Rent-houses/House-2/home2-4.jpg",
       "/Rent-houses/House-2/home2-5.jpg",
     ],
-    name: "Karachi",
-    address: "Bahria Town, Karachi, Pakistan",
+    name: "Kahawa Wendani",
+    address: "Thika Road, Kahawa Wendani",
     price: 100000,
     details: [
       "4 Bedrooms",
@@ -49,7 +49,7 @@ export const rentHouses = [
       "Area: 20 marla",
     ],
     description:
-      "Bahria Town 20 Marla New brand house available for sale Good location house near by hospital and market and masjid and school, park and other facilities in fully future developed society",
+      "Kahawa Wendani 20 Marla New brand house available for sale Good location house near by hospital and market and masjid and school, park and other facilities in fully future developed society",
   },
   {
     id: 3,
@@ -61,11 +61,11 @@ export const rentHouses = [
       "/Rent-houses/House-3/home3-4.jpg",
       "/Rent-houses/House-3/home3-5.jpg",
     ],
-    name: "Karachi",
-    address: "Gulistan-e-Johar, Karachi, Pakistan",
+    name: "Roysambu",
+    address: "Roysambu,Thika Road",
     price: 50000,
     details: [
-      "Gulistan-e-Johar Block 7",
+      "Zimmerman Block 7",
       "MAHAM PLAZA",
       "2 Bedrooms",
       "2 Bathrooms",
@@ -75,7 +75,7 @@ export const rentHouses = [
       "Area: 950 sqr.feet",
     ],
     description:
-      "Apartment in installment (View phone number) Sqfeet VIP location near to park and masjid Gulistan-e-Johar karachi. You can find a Flat on the lower or upper levels, as suiting to your requirement. Buying property is a one-time life decision and we can help you with it. 950 Square Feet sized residential or commercial property is best for investment purposes. All your queries concerned with this property are welcome, so please contact us.",
+      "Apartment in installment (View phone number) Sqfeet VIP location near to park and Roysambu. You can find a Flat on the lower or upper levels, as suiting to your requirement. Buying property is a one-time life decision and we can help you with it. 950 Square Feet sized residential or commercial property is best for investment purposes. All your queries concerned with this property are welcome, so please contact us.",
   },
   {
     id: 4,
@@ -87,11 +87,11 @@ export const rentHouses = [
       "/Rent-houses/House-4/home4-4.jpg",
       "/Rent-houses/House-4/home4-5.jpg",
     ],
-    name: "Islamabad",
-    address: "Blue Area, F-3, Islamabad, Pakistan",
+    name: "Ruiru",
+    address: "Ruiru, Kiambu",
     price: 135000,
     details: [
-      "Location: Isra Tower",
+      "Location: Ruiru",
       "2 Bedrooms",
       "Drawing Room",
       "2 Bathrooms",
@@ -113,11 +113,11 @@ export const rentHouses = [
       "/Rent-houses/House-5/home5-4.jpg",
       "/Rent-houses/House-5/home5-5.jpg",
     ],
-    name: "Faisalabad",
-    address: "Saadi Town, Faisalabad, Pakistan",
+    name: "Juja",
+    address: "Juja, Thika Road",
     price: 95000,
     details: [
-      "Bunglow at saadi town scheme",
+      "Bunglow at Juja town scheme",
       "4 Bedrooms",
       "A big drawing Room",
       "5 Bathrooms",
@@ -127,7 +127,7 @@ export const rentHouses = [
       "Area: 120 sqr.yards",
     ],
     description:
-      "Saadi Town Brand New Project Banglow Double Story 120 Sq Yards Bedrooms with attach baths Drawing Lounge open American Kitchen Washing area Huge Terrace Tiles Flooring Fancy lights Complete Boundary wall project Daily Sweet line Water No Load Shedding gas Security Guards Masjid Park Pure Family Environment Main Road approach Ideal Location",
+      "Juja Town Brand New Project Banglow Double Story 120 Sq Yards Bedrooms with attach baths Drawing Lounge open American Kitchen Washing area Huge Terrace Tiles Flooring Fancy lights Complete Boundary wall project Daily Sweet line Water No Load Shedding gas Security Guards Masjid Park Pure Family Environment Main Road approach Ideal Location",
   },
   {
     id: 6,
@@ -139,11 +139,11 @@ export const rentHouses = [
       "/Rent-houses/House-6/home6-4.jpg",
       "/Rent-houses/House-6/home6-5.jpg",
     ],
-    name: "Karachi",
-    address: "Bahria Town, Karachi, Pakistan",
+    name: " Githurai",
+    address: "Githurai, Thika Road",
     price: 120000,
     details: [
-      "Bahria Villas, Bahria Town, Karachi",
+      "Githurai",
       "5 Bedrooms",
       "Big drawing Room Lounge",
       "6 Bathrooms",
@@ -153,6 +153,6 @@ export const rentHouses = [
       "Area: 120 sqr.yards",
     ],
     description:
-      "The Best Design As Per Your Desire And Your Dream House a Well Designed House In A Posh Location Is All You Need To Live Your Best Life. Right Now Is The Time To Buy This Property. This Property In Bahria Town is an Opportunity For The Investors And Buyers Alike, So Make The Most Out Of It. Bahria Town S Unique Features Bahria Town Is A Secure Community 24 7 Electricity Available Under Ground Electricity WiringGrand Jamia Masjid Petrol Pump Feel Free To Contact For Further Details",
+      "The Best Design As Per Your Desire And Your Dream House a Well Designed House In A Posh Location Is All You Need To Live Your Best Life. Right Now Is The Time To Buy This Property. This Property In Bahria Town is an Opportunity For The Investors And Buyers Alike, So Make The Most Out Of It. Bahria Town S Unique Features Githurai Town Is A Secure Community 24 7 Electricity Available Under Ground Electricity WiringGrand Shell Petrol Pump Feel Free To Contact For Further Details",
   },
 ];

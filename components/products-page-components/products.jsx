@@ -51,6 +51,10 @@ const Product = ({
     }, 400);
   };
 
+  const openWhatsApp = () => {
+    const whatsappLink = "https://wa.me/254741370283?text=Hey%20Patnan%20Investments!%20Curious%20about%20your%20real%20estate%20offerings.%20Can%20you%20give%20me%20a%20quick%20rundown%3F%20Thanks!%20";
+    window.open(whatsappLink, "_blank");
+};
   useEffect(() => {
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
   }, [cartItems]);
@@ -104,53 +108,8 @@ const Product = ({
             viewport={{ once: true, amount: 0.2 }}
             className="sticky max-lg:static top-32 flex flex-col gap-4"
           >
-            <h1 className="text-5xl font-semibold">House in {title}</h1>
-            <p className="details text-2xl">{descr}</p>
-            <div>
-              <h2 className="text-xl text-red-500 font-semibold">Price:</h2>
-              <h2 className="text-2xl mt-2 font-semibold">
-                PKR {formatCompactNumber(price)}/Month
-              </h2>
-            </div>
-            <div className="flex flex-col gap-2">
-              <h2 className="text-xl text-red-500 font-semibold">Quantity</h2>
-
-              <NumberInput
-                borderColor={"#696969"}
-                focusBorderColor="#a7a7a7"
-                _placeholder={{ color: "#696969" }}
-                variant={"flushed"}
-                min={1}
-                id="inp"
-                size={"lg"}
-                className="mt-4 max-lg:w-72 max-sm:w-full"
-                value={inpt}
-                onChange={(e) => {
-                  setInpt(Number(e));
-                }}
-              >
-                <NumberInputField fontSize={"xl"} paddingX={"2"} />
-                <NumberInputStepper>
-                  <NumberIncrementStepper />
-                  <NumberDecrementStepper />
-                </NumberInputStepper>
-              </NumberInput>
-              <Button
-                // _hover={{ borderColor: "#d5515e" }}
-                _hover={{ backgroundColor: "white", color: "#d5515e" }}
-                backgroundColor={"#d5515e"}
-                color={"white"}
-                borderColor={"#d5515e"}
-                variant={"outline"}
-                size={"lg"}
-                isLoading={btnLoader}
-                loadingText={"Adding to Cart"}
-                onClick={handleAddToCart}
-                className="mt-4 max-lg:w-72 max-sm:w-full"
-              >
-                Add to Cart
-              </Button>
-            </div>
+            <h1 className="text-4xl font-semibold">House in {title}</h1>
+            <p className="details text-xl">{descr}</p>
             <div className="flex text-xl flex-col gap-2">
               <h2 className=" text-red-500 font-semibold">Details</h2>
               <p>{descr}</p>
@@ -159,6 +118,29 @@ const Product = ({
                   return <li key={i}>{e}</li>;
                 })}
               </ul>
+            </div>
+            <div>
+              <h2 className="text-xl text-red-500 font-semibold">Price:</h2>
+              <h2 className="text-2xl mt-2 font-semibold">
+                KSH {formatCompactNumber(price)}/Month
+              </h2>
+            </div>
+            <div className="flex flex-col gap-2">
+              <Button
+                // _hover={{ borderColor: "#E3AD49" }}
+                _hover={{ backgroundColor: "white", color: "#E3AD49" }}
+                backgroundColor={"#E3AD49"}
+                color={"white"}
+                borderColor={"#E3AD49"}
+                variant={"outline"}
+                size={"lg"}
+                isLoading={btnLoader}
+                loadingText={"Adding to Cart"}
+                onClick={openWhatsApp}
+                className="mt-4 max-lg:w-72 max-sm:w-full"
+              >
+                 Inquire Via WhatsApp
+              </Button>
             </div>
           </motion.div>
         </div>

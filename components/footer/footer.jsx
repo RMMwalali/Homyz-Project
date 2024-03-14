@@ -4,6 +4,7 @@ import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { scrollToTop } from "../../constants/scrollToTop";
+import Copyright from "../../constants/copyright"
 
 const Footer = () => {
   const toast = useToast();
@@ -52,7 +53,7 @@ const Footer = () => {
     if (errors === false) {
       setBtnLoader(true);
       axios
-        .post("https://homyz-server.vercel.app/contact", formData)
+        .post("https://formsubmit.co/mwendermwalali@gmail.com", formData)
         .then((response) => {
           showToast();
           setFormData({
@@ -136,23 +137,17 @@ const Footer = () => {
         <div className="flex flex-col items-start h-auto justify-between gap-16 w-2/4 max-lg:w-full pr-10 max-sm:pr-0">
           <div className="flex flex-col text-lg items-start  justify-between gap-10 ">
             <a href="/">
-              <img src="/Homyz-logo.png" className="w-36" alt="Homyz-logo" />
+              <img src="/patnan logo.png" className="w-36" alt="Patnan-logo" />
             </a>
             <p style={{ color: "#696969" }}>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam,
-              pariatur. Fugit dignissimos aut tempora ullam similique minima
-              culpa quod fuga, doloribus expedita, cupiditate sint, nulla
-              distinctio soluta. Aut, sequi quia.
+            Connect with Us: Have questions or ready to explore real estate opportunities? Reach out to our friendly team at Patnan Investments. We’re here to assist you every step of the way. Fill out the form, and let’s start your property journey together!
             </p>
             <div className="flex text-xl justify-start items-center gap-10 text-red-500">
-              <Link target="_blank" to={"https://facebook.com"}>
+              <Link target="_blank" to={"https://www.facebook.com/profile.php?id=61556576006921&sfnsn=wa&mibextid=RUbZ1f"}>
                 <FaFacebookF />
               </Link>
-              <Link target="_blank" to={"https://instagram.com"}>
+              <Link target="_blank" to={"https://www.instagram.com/patnan_investment?igsh=MTFlZjlvd3Y1OHV1MQ=="}>
                 <FaInstagram />
-              </Link>
-              <Link target="_blank" to={"https://twitter.com"}>
-                <FaTwitter />
               </Link>
             </div>
             <ul className="text-white text-lg flex justify-start items-center flex-wrap gap-x-8 gap-y-4">
@@ -186,7 +181,6 @@ const Footer = () => {
               </Link>
             </ul>
           </div>
-          <p style={{ color: "#696969" }}>© Homyz. All Rights Reserved 2023.</p>
         </div>
 
         <div
@@ -194,7 +188,7 @@ const Footer = () => {
           className="w-2/4 max-lg:w-full flex flex-col h-auto justify-between items-start gap-10 "
         >
           <h1 className="text-3xl text-white">Get in Touch</h1>
-          <div className="name w-full gap-8 text-white max-sm:flex-col max-sm:gap-10 mt-3 flex">
+          {/* <div className="name w-full gap-8 text-white max-sm:flex-col max-sm:gap-10 mt-3 flex">
             <Input
               pl={3}
               fontSize={19}
@@ -272,10 +266,10 @@ const Footer = () => {
             autoComplete="off"
           />
           <Button
-            _hover={{ backgroundColor: "white", color: "#d5515e" }}
-            backgroundColor={"#d5515e"}
+            _hover={{ backgroundColor: "white", color: "#E3AD49" }}
+            backgroundColor={"#E3AD49"}
             color={"white"}
-            borderColor={"#d5515e"}
+            borderColor={"#E3AD49"}
             variant={"outline"}
             size={"lg"}
             isLoading={btnLoader}
@@ -288,8 +282,19 @@ const Footer = () => {
             borderRadius={"4px"}
           >
             Submit
-          </Button>
+          </Button> */}
+          <iframe
+            title="Patnan Investments Location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.437133695514!2d<LONGITUDE>!3d<LATITUDE>!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDU2JzU5LjIiTiAxMjnCsDIxJzQ0LjYiVw!5e0!3m2!1sen!2suk!4v1590182849235!5m2!1sen!2suk"
+            width="500"
+            height="300"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+          ></iframe>
+          <div><Copyright /></div>
         </div>
+        
       </footer>
     </div>
   );

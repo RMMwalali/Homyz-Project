@@ -141,7 +141,7 @@ const NavBar = ({ navBar2, showCase1Page }) => {
                                     </h2>
                                   </Link>
                                   <h3>
-                                    PKR {formatCompactNumber(e.price)}/Month
+                                    KSH {formatCompactNumber(e.price)}/Month
                                   </h3>
                                   <p
                                     onClick={(event) => {
@@ -180,7 +180,7 @@ const NavBar = ({ navBar2, showCase1Page }) => {
                             <div className="flex justify-between">
                               <h2>Total</h2>
                               <p>
-                                PKR {formatCompactNumber(e.quantity * e.price)}
+                                KSH {formatCompactNumber(e.quantity * e.price)}
                               </p>
                             </div>
                           </div>
@@ -194,7 +194,7 @@ const NavBar = ({ navBar2, showCase1Page }) => {
                   <div className="flex justify-between items-center">
                     <h2>Subtotal</h2>
                     <p className="total text-red-500">
-                      PKR {formatCompactNumber(subTotal)}
+                      KSH  {formatCompactNumber(subTotal)}
                     </p>
                   </div>
                   <Button
@@ -238,13 +238,13 @@ const NavBar = ({ navBar2, showCase1Page }) => {
           style={{ maxWidth: 1200 }}
           className="flex justify-between mx-auto items-center gap-4 py-7 max-md:py-5 px-10 max-sm:px-5 font-medium"
         >
-          {/* <Link onClick={scrollToTop} to="/">
+          <Link onClick={scrollToTop} to="/">
             <img
-              src={navBar2 ? "/Homyz-logo2.png" : logo}
-              className="w-44 max-lg:w-36"
-              alt="Homyz-logo"
+              src={"/patnan logo.png"}
+              className="w-14 max-lg:w-10"
+              alt="Patnan logo"
             />
-          </Link> */}
+          </Link>
           <Link onClick={scrollToTop} to="/">
           <motion.h1
             variants={animationVariants.fadeLeft}
@@ -327,7 +327,7 @@ const NavBar = ({ navBar2, showCase1Page }) => {
             >
               About
             </Link>
-            <div
+            {/* <div
               className="relative cursor-pointer  transition-all"
               onClick={() => {
                 setModal(true);
@@ -346,7 +346,7 @@ const NavBar = ({ navBar2, showCase1Page }) => {
                 ""
               )}
               <FaShoppingCart />
-            </div>
+            </div> */}
 
             <Link onClick={scrollToTop} to="/contact">
               <Button
@@ -358,30 +358,8 @@ const NavBar = ({ navBar2, showCase1Page }) => {
             </Link>
           </ul>
           <ul
-            className={`${
-              navBar2 ? "text-black" : textColor
-            } text-xl hidden max-lg:flex justify-center items-center gap-8`}
+            className={`text-black text-xl hidden max-lg:flex justify-center items-center gap-8`}
           >
-            <div
-              className="relative"
-              onClick={() => {
-                setModal(true);
-              }}
-            >
-              {totalQty > 0 ? (
-                <p
-                  className={`absolute bg-red-500 pt-[1.5px] text-white rounded-full h-[18px] px-1   min-w-[18px] ${
-                    totalQty >= 100 ? "-right-[15px]" : "-right-[10px]"
-                  }  text-xs font-medium text-center -top-[10px]`}
-                >
-                  {totalQty}
-                </p>
-              ) : (
-                ""
-              )}
-              <FaShoppingCart />
-            </div>
-
             <FaBars
               onClick={() => {
                 setViewSideNav(!viewSideNav);

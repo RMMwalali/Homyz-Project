@@ -305,10 +305,10 @@ const ContactPage = () => {
             onChange={handleChange}
           />
           <Button
-            _hover={{ backgroundColor: "white", color: "#d5515e" }}
-            backgroundColor={"#d5515e"}
+            _hover={{ backgroundColor: "white", color: "#E3AD49" }}
+            backgroundColor={"#E3AD49"}
             color={"white"}
-            borderColor={"#d5515e"}
+            borderColor={"#E3AD49"}
             variant={"outline"}
             size={"lg"}
             isLoading={btnLoader}
@@ -406,13 +406,13 @@ const ContactPage = () => {
             {/* map human images end */}
 
             {/* map points start */}
-            <div className="w-7 h-7 bg-[#d5515e66] flex justify-center items-center rounded-full absolute top-5 left-32 max-sm:left-5 max-sm:top-24">
+            <div className="w-7 h-7 bg-[#E3AD4966] flex justify-center items-center rounded-full absolute top-5 left-32 max-sm:left-5 max-sm:top-24">
               <div className="w-[18px] h-[18px] bg-red-500 rounded-full"></div>
             </div>
-            <div className="w-7 h-7 bg-[#d5515e66] flex justify-center items-center rounded-full absolute top-10 max-md:top-16 max-md:right-44 max-sm:right-32 right-64">
+            <div className="w-7 h-7 bg-[#E3AD4966] flex justify-center items-center rounded-full absolute top-10 max-md:top-16 max-md:right-44 max-sm:right-32 right-64">
               <div className="w-[18px] h-[18px] bg-red-500 rounded-full"></div>
             </div>
-            <div className="w-7 h-7 bg-[#d5515e66] flex justify-center items-center rounded-full absolute bottom-16 right-28 max-md:right-0 max-md:bottom-20 max-md:left-44 max-sm:bottom-24 max-sm:left-32">
+            <div className="w-7 h-7 bg-[#E3AD4966] flex justify-center items-center rounded-full absolute bottom-16 right-28 max-md:right-0 max-md:bottom-20 max-md:left-44 max-sm:bottom-24 max-sm:left-32">
               <div className="w-[18px] h-[18px] bg-red-500 rounded-full"></div>
             </div>
             {/* map points end */}
