@@ -292,9 +292,8 @@ const Footer = () => {
             allowFullScreen=""
             loading="lazy"
           ></iframe>
-          <div><Copyright /></div>
+          <div><Copyright/></div>
         </div>
-        
       </footer>
     </div>
   );
