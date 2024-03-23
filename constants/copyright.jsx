@@ -10,7 +10,7 @@ class Copyright extends React.Component {
 
     render() {
         return (
-            <p style={{ color: "#696969" }}>© Patnan Investments. All Rights Reserved {this.state.currentYear}.</p>
+            <p style={{ color: "white" }}>© Patnan Investments. All Rights Reserved {this.state.currentYear}.</p>
         );
     }
 }

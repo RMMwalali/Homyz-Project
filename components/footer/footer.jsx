@@ -129,7 +129,7 @@ const Footer = () => {
   // You can add more validations based on your requirements
 
   return (
-    <div className="bg-black">
+    <div className="bg-gray-700">
       <footer
         style={{ maxWidth: 1200 }}
         className="mx-auto flex justify-between gap-20 max-lg:flex-col py-20 px-8 max-sm:px-5  "
@@ -139,7 +139,7 @@ const Footer = () => {
             <a href="/">
               <img src="/patnan logo.png" className="w-36" alt="Patnan-logo" />
             </a>
-            <p style={{ color: "#696969" }}>
+            <p style={{ color: "white" }}>
             Connect with Us: Have questions or ready to explore real estate opportunities? Reach out to our friendly team at Patnan Investments. We’re here to assist you every step of the way. Fill out the form, and let’s start your property journey together!
             </p>
             <div className="flex text-xl justify-start items-center gap-10 text-red-500">
@@ -285,7 +285,7 @@ const Footer = () => {
           </Button> */}
           <iframe
               title="Patnan Investments Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.437133695514!2d<LONGITUDE>!3d<LATITUDE>!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDU2JzU5LjIiTiAxMjnCsDIxJzQ0LjYiVw!5e0!3m2!1sen!2suk!4v1590182849235!5m2!1sen!2suk"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8567866081426!2d36.918819500000005!3d-1.2579171999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f14f17154a83d%3A0x24d2e9e157c3e236!2sPatnan%20Investment!5e0!3m2!1sen!2sde!4v1711214395755!5m2!1sen!2sde"
               style={{ border: 0, width: "100%", height: "300px" }}
               allowFullScreen=""
               loading="lazy"
